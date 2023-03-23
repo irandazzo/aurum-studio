@@ -1,0 +1,584 @@
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para la sección del encabezado */
+/*   .header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #000;
+    border-top: 1px solid #fff;
+  } */
+  .header-info {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-top: 2px solid #fff;
+  }
+  .branding {
+    flex: 1;
+  }
+  
+  .branding h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 110px;
+    margin: 10px;
+    text-align: center;
+
+  }
+  .branding h2 {
+    margin: 0 auto;
+    max-width: 80%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Sobre Nosotros */
+  .about-us {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #ecdfdb;
+  }
+
+  .about-title{
+    font-size: 40px;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  .about-description{
+    flex: 1;
+    width: 40%;
+    margin-right: 40px;
+  }
+  .about-description p{
+    font-size: 20px;
+    margin: 30px;
+    padding: 20px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+  
+  .contact-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .contact-button a {
+    display: inline-block;
+    background-color: #ecdfdb;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+  }
+  
+/*   .contact-button a {
+    display: inline-block;
+    background-color: #ecdfdb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  } */
+  
+  .contact-button a:hover {
+    background-color: #C2B790;
+    color: #fff;
+    border: 1px solid #C2B790;
+  }
+
+  /* Sección Servicios */
+  .services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+  }
+  .services-container i{
+      font-size: 40px;
+      margin: 20px;
+      color: grey
+  }
+  
+  .services-card {
+    width: 30%;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .help-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .help-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .help-image-left,
+  .help-image-right {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+  }
+  
+  .help-image-left img,
+  .help-image-right img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .help-info-container {
+    flex: 2;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .help-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .help-info:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .more-info-button {
+    text-align: center;
+  }
+  
+  .more-info-button a {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .more-info-button a:hover {
+    background-color: #666666;
+  }
+  .help-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .help-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .help-image-left {
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .help-image-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .help-image-right {
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .help-image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .help-info-container {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .accordion {
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .accordion-button:focus {
+    outline: none;
+  }
+  
+  .accordion-body {
+    padding: 10px;
+    background-color: #eee;
+  }
+  /* Prueba acordeon */
+
+  .myaccordion {
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+  
+  .myaccordion .card,
+  .myaccordion .card:last-child .card-header {
+    border: none;
+  }
+  
+  .myaccordion .card-header {
+    border-bottom-color: #EDEFF0;
+    background: transparent;
+  }
+  
+  .myaccordion .fa-stack {
+    font-size: 18px;
+  }
+  
+  .myaccordion .btn {
+    width: 100%;
+    font-weight: bold;
+    color: #004987;
+    padding: 0;
+  }
+  
+  .myaccordion .btn-link:hover,
+  .myaccordion .btn-link:focus {
+    text-decoration: none;
+  }
+  
+  .myaccordion li + li {
+    margin-top: 10px;
+  }
+  /* Fin prueba acordeon */
+  /* Sección Testimonios */
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .testimonial {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .testimonial h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    width: 30%;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card span {
+    font-size: 14px;
+    color: #999;
+  }
+/* Sección Ejemplos de Portfolio */
+  .work-examples {
+    margin: 30px 0;
+  }
+  
+  .work-examples h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .work-card {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-card img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .work-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .work-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .work-card a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .work-card a:hover {
+    background-color: #0056b3;
+  }
+/* Span de Cotización */
+  .container {
+    position: relative;
+    height: 400px;
+    background-color: grey;
+    /* background-image: url('imagen-de-fondo.jpg'); */
+    background-size: cover;
+    background-position: center;
+  }
+  .fraseCotizacion{
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      font-size: 50px;
+  }
+  .cta-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Formulario de Contacto */
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form h2{
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      text-transform: uppercase;
+  }
+  .contact-form button{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-group textarea[readonly] {
+    background-color: #f5f5f5;
+    color: #555;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  
