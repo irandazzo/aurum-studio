@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #060606;
     color: #fff;
     padding: 25px;
   }
@@ -73,61 +73,58 @@
     height: auto;
   }
   /* Sobre Nosotros */
-  .about-us {
-    display: flex;
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 0.1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  height: 300px;
+  background-color: #f2f1e8;
+  }
+.about-us{
     align-items: center;
-    height: 400px;
-    background-color: #ecdfdb;
+    text-align: center;
   }
-
-  .about-title{
-    font-size: 40px;
-    margin: 10px;
+.about-title h2{
+    
+    margin-bottom: 50px;
+    color: #060606;
     text-transform: uppercase;
-  }
-  .about-description{
-    flex: 1;
-    width: 40%;
-    margin-right: 40px;
+    font-size: 61px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 100;
   }
   .about-description p{
-    font-size: 20px;
+    color: #060606;
     margin: 30px;
     padding: 20px;
     text-align: left;
     letter-spacing: 0.5px;
-}
-  
+    font-size: 19px;
+    font-weight: 300;
+    font-family:'Times New Roman', Times, serif;
+  }
   .contact-button {
-    margin-top: 20px;
+    display: block;
     text-align: center;
   }
-  .contact-button a {
+  .about-us a {
     display: inline-block;
-    background-color: #ecdfdb;
-    color: #000;
-    padding: 10px 20px;
+    background-color: #f2f1e8;
+    color: #948b71;
+    padding: 5px 5px;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
-    border: 1px solid black;
+    border: 0.1px solid #948b71;
+    text-transform: uppercase;
   }
-  
-/*   .contact-button a {
-    display: inline-block;
-    background-color: #ecdfdb;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  } */
-  
-  .contact-button a:hover {
+  .about-us a:hover {
     background-color: #C2B790;
     color: #fff;
-    border: 1px solid #C2B790;
+    border: 1px solid #948b71;
   }
 
   /* Sección Servicios */
@@ -297,6 +294,7 @@
     padding: 10px;
     background-color: #eee;
   }
+
   /* Prueba acordeon */
 
   .myaccordion {
@@ -336,137 +334,154 @@
   }
   /* Fin prueba acordeon */
   /* Sección Testimonios */
-  .testimonial-card p {
-    font-style: italic;
+  .testimonial{
+    background-color: #948b71;
     margin-bottom: 20px;
   }
-  .testimonial {
+  .testimonial h2{
     text-align: center;
-    padding: 50px 0;
-    background-color: #fff;
-  }
-  
-  .testimonial h2 {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  .testimonial-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .testimonial-card {
-    width: 30%;
-    margin: 0 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .testimonial-card p {
+    padding: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 50;
+    font-size: 44px;
     font-style: italic;
-    margin-bottom: 20px;
+    color: #fff;
   }
-  
-  .testimonial-card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-card span {
-    font-size: 14px;
-    color: #999;
-  }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #948b71;
+    }
+    .testimonial-card{
+      margin: 40px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .testimonial-card h3{
+      color: #fff;
+      font-size: 33px;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .testimonial-card span{
+      color: #fff;
+    }
 /* Sección Ejemplos de Portfolio */
-  .work-examples {
-    margin: 30px 0;
-  }
+.work-section{
+  background-color: #060606;
+}
+.work-title{
+  text-align: center;
+  margin: 5px;
+  font-weight: 600;
+  color: #fff;
   
-  .work-examples h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .work-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .work-card {
-    flex: 1 1 300px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .work-card img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .work-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .work-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .work-card a {
-    display: inline-block;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .work-card a:hover {
-    background-color: #0056b3;
-  }
+}
+.work-examples{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.work-card {
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+}
+
+.work-image {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.work-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.work-content {
+  padding: 20px;
+}
+
+.work-content h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.work-content p {
+  margin-bottom: 20px;
+}
+
+.work-btn {
+  display: inline-block;
+  background-color: #948b71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.work-btn:hover{
+  background-color: #817962;
+  color: #fff;
+}
+
 /* Span de Cotización */
-  .container {
-    position: relative;
-    height: 400px;
-    background-color: grey;
-    /* background-image: url('imagen-de-fondo.jpg'); */
-    background-size: cover;
-    background-position: center;
-  }
-  .fraseCotizacion{
-      position: absolute;
-      top: 20%;
-      left: 20%;
-      font-size: 50px;
-  }
-  .cta-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .cta-btn:hover {
-    background-color: #0056b3;
-  }
+.card {
+  background-image: url(./images/fondopalmeras.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  text-align: center;
+  color: #fff;
+}
+
+.card-content h2 {
+  font-size: 59px;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+  color: #f2f1e8;
+  margin-bottom: 10px;
+}
+
+.card-content button {
+  background-color: #948b71;
+  color: #f2f1e8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.card-content button:hover{
+  background-color: #817962;
+}
 
   /* Formulario de Contacto */
 
@@ -536,7 +551,7 @@
   }
   /* Footer */
   footer {
-    background-color: #222;
+    background-color: #f2f1e8;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -544,23 +559,26 @@
     align-items: center;
   }
   
-  nav ul {
+  footer nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  nav li {
+  footer nav li {
     margin-right: 20px;
   }
   
-  nav a {
-    color: #fff;
+  footer nav a {
+    color: #e0b784;
     text-decoration: none;
     font-size: 16px;
   }
-  
+  footer nav a:hover {
+    color: #7c7b77;
+  }
+
   .social-icons {
     margin: 20px 0;
   }
@@ -568,17 +586,18 @@
   .social-icons a {
     display: inline-block;
     margin-right: 10px;
-    color: #fff;
+    color: #000;
     font-size: 24px;
   }
   
   .social-icons a:hover {
-    color: #007bff;
+    color: #7c7b77;
   }
   
   p {
     margin: 0;
     font-size: 14px;
+    color: #e0b784;
   }
   
   
