@@ -527,3 +527,25 @@ footer nav a:hover {
   font-size: 14px;
   color: #e0b784;
 }
+/* Mediaqueries */
+@media (max-width: 768px) {
+  .header-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .branding h1 {
+    font-size: 1.5rem;
+  }
+
+  .branding h2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+}
