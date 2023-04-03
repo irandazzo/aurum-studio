@@ -53,6 +53,10 @@ nav a:hover {
   background-color: #000;
   border-top: 2px solid #fff;
 }
+.header-info-2{
+  background-color: #000;
+  border-top: 2px solid #fff
+}
 
 .branding {
   flex: 1;
@@ -639,5 +643,8 @@ footer nav a:hover {
       font-size: 1.2em;
       padding: 0.5em 1em;
   }
+}
+@media screen and (max-width: 425px){
+
 }
 

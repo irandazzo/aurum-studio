@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Presentation */
+.presentation{
+    background-color: #060606;
+    display: flex;
+    border-top: 2px solid #fff;
+}
+.presentation h1, h2{
+    color: #fff;
+    text-align: center;
+}
+.presentation h1{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.presentation h2{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px;
+}
+/* About Us */
+.about-us{
+    background-color: #F2F1E8;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.about-us h2{
+    color: #060606;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-us p{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    line-height: 35px;
+    color: #060606;
+}
+.about-us a{
+    border: 1px solid #060606;
+    padding: 2px 30px;
+    text-decoration: none;
+    color: #060606;
+}
+.about-us a:hover{
+    background-color: #948B71;
+    border-color: #948B71;
+    color: #fff;
+}
+
+
