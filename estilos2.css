@@ -28,33 +28,116 @@
 /* About Us */
 .about-us{
     background-color: #F2F1E8;
-    height: 300px;
     display: flex;
     align-items: center;
+    height: 400px;
 }
 .about-us h2{
     color: #060606;
     font-size: 60px;
     font-weight: 100;
     font-family: 'Times New Roman', Times, serif;
+    line-height: 61px;
 }
 .about-us p{
     font-size: 21px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
-    line-height: 35px;
+    line-height: 36px;
     color: #060606;
 }
 .about-us a{
-    border: 1px solid #060606;
+    border: 2px solid #948B71;
     padding: 2px 30px;
     text-decoration: none;
-    color: #060606;
+    color: #948B71;
 }
 .about-us a:hover{
     background-color: #948B71;
     border-color: #948B71;
     color: #fff;
 }
+/* Testimonials */
+.testimonials{
+    background-color: #948B71;
+    height: 500px;
+}
+.testimonials h2{
+    padding: 30px;
+    font-weight: 100;
+    font-size: 44px;
+    line-height: 57px;
+}
+.testimonials p{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    padding: 30px;
+    line-height: 29px;
+}
+.testimonials span{
+    color: #fff;
+    padding: 30px;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 24px;
+}
+/* Help Section */
+/* Acordeon */
+/* details{
+    background-color: #f2f2f2;
+   /*  padding: .5rem .5rem;
+    border-radius: 6px;
+    margin: .5rem; */
+/* }
+summary{
+    list-style: none;
+}
+summary::before{
+    content: "+"; */
+/*     /* padding-right: 1rem; */
+/* }
+details[open] summary::before{
+    content: "-";
+    padding-right: 1rem;
+} */
+/*
+details {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  details[open] > div {
+    height: auto;
+  }
+  
+  details > div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  details > summary {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  details[open] > div {
+    max-height: 700px; /* ajuste este valor según sea necesario */
+  /* } */
 
+  .help-section{
+    background-color: #060606;
+    padding: 20px;
+    height: 400px;
+  }
 
