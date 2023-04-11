@@ -1,23 +1,12 @@
 /* Acordeón */
+const container = document.getElementById("container");
 
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-
-accordionItemHeaders.forEach(accordionItemHeader => {
-  accordionItemHeader.addEventListener("click", event => {
-
-
-
-    accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
-    if (accordionItemHeader.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-    }
-    else {
-      accordionItemBody.style.maxHeight = 0;
-    }
-
-  });
-});
+container.addEventListener("click", (e) =>{
+  if(e.target.classList.contains("carita")){
+    e.target.parentElement.classList.toggle("scale")
+    (e.target.children[1].classList.toggle("rotate"));
+  };
+})
 
 /* Formulario */
 
@@ -36,5 +25,3 @@ enviarBtn.addEventListener('click', (e) => {
 function enviarFormulario() {
 
 }
-
-
